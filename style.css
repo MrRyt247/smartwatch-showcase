@@ -1,0 +1,179 @@
+:root {
+    --blue: #565681;
+    --purple: #8a5362;
+    --black: #23211f;
+    --red: #ca3d22;
+    --pink: #e9c7be;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100svh;
+    width: 100%;
+}
+
+header {
+    height: 4rem;
+    background-color: rgb(22, 31, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > img {
+    height: 50%;
+}
+
+main {
+    height: calc(100% - 8rem);
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.left {
+    height: min-content;
+    width: fit-content;
+    margin-inline-start: auto;
+    margin-block-end: auto;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.left img {
+    width: 100%;
+    position: relative;
+    left: 10%;
+    z-index: -1;
+}
+
+.time {
+    display: flex;
+    position: absolute;
+    top: 48%;
+    left: 60%;
+    transform: translate(-50%, -48%);
+    color: aliceblue;
+    font-family: Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.time span {
+    letter-spacing: 3px;
+}
+
+.heart-rate {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    position: absolute;
+    top: 48%;
+    left: 60%;
+    transform: translate(-50%, -48%);
+    color: rgb(255, 249, 240);
+    font-family: Times, serif;
+    font-size: 30px;
+}
+
+i {
+    color: red;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: .8rem;
+    margin-inline-end: auto;
+    margin-block-end: auto;
+}
+
+.right > h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+}
+
+.right > p {
+    font-family: Monserrat, sans-serif;
+    font-size: 13px;
+    color: gray;
+    width: 80%;
+}
+
+.right h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.color-box {
+    width: min-content;
+    display: flex;
+    column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.color-box > .color {
+    width: 45px;
+    aspect-ratio: 1.33;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.right .buttons {
+    width: fit-content;
+    display: flex;
+    column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.right button {
+    border: solid 0px;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: transform 120ms ease-out;
+}
+
+.right > button {
+    width: 6.7rem;
+    padding: .75rem 1.25rem;
+    background-color: orange;
+    text-transform: uppercase;
+}
+
+.right button:active {
+    transform: scale(.96);
+}
+
+
